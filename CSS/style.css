@@ -1,0 +1,74 @@
+/* 
+    Created on : 31/03/2016, 16:54:30
+    Author     : CarlosDv93
+*/
+@charset "UTF-8";
+* {
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 1em;
+    color: #333333;
+    text-align: center;
+}
+
+h1{
+    text-align: center;
+}
+
+body {
+    width: 950px;
+    margin: auto;
+    background: #ef9c38;
+
+}
+#MenuDiv {
+    background: orange;
+    display: table;
+    margin: auto;
+    width: 100%;
+    text-align: justify;
+}
+#MenuDiv ul {
+    list-style:none;
+    margin: auto;
+    width: 50%;
+}
+
+#MenuDiv ul li{
+    display: inline-block;
+}
+
+#MenuDiv ul li a {
+    font: 18px verdana, arial, tahoma, sans-serif;
+    color: #000;
+    background: orange;
+    text-decoration: none;
+    float: left;
+    padding: 5px 10px;
+    margin-left: 1px;
+}
+
+#MenuDiv ul li a:hover {
+    color:  orange;
+    background: #000;
+}
+
+div{
+    background: #ffb249;
+}
+
+#content-wrap {
+	background: left top repeat-y;
+}
+
+#content {
+	background: #d37a11;
+	padding: 6px 15px 35px;
+}
+
+#footer {
+	padding: 18px 0;
+	color: #000;
+	font-size: 11px;
+	text-align: center;
+        clear: both;
+}

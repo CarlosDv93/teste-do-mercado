@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Mercadorias disponiveis Compra e Venda</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="../CSS/style.css">
+        <script src="../JavaScript/verificaMercado.js"></script>
+               
+    </head>
+    <body>
+        <header>
+
+            <h1> Negocie sua Mercadoria aqui!</h1>
+            <h2> Podemos vender sua mercadoria, basta você querer.</h2>
+
+        </header>
+        <div id="MenuDiv">
+
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="Comprar.html">Comprar</a></li>
+                <li><a href="Vender.html">Vender</a></li>
+                <li><a href="Mercado.html">Mercado</a></li>
+                <li><a href="contato.html">Contato</a></li>
+            </ul>
+
+        </div>
+
+        <form id="formMercado" name="form1" action="" method="GET" onsubmit="myFuntion()">
+            <fieldset>
+                <legend>
+                    Procure sua mercadoria!!
+                </legend>
+                <label for="codigo">Código: </label>
+                <input id="codigo" type="text" name="codigo" value="" placeholder="Digite o código"/> <br>
+                <label for="nome"> Nome: </label>
+                <input id="nome" type="text" name="nome1" value="" /> <br>
+                <label for="tipo"> Tipo: </label>
+                <input id="tipo" type="text" name="tipo" value="" /> <br> 
+                <label for="qtde"> Qtde: </label>
+                <input id="qtde" type="text" name="qtde" value="" /> <br>
+                <label for="negocio"> Negócio: </label><select id="negocio" name="negocio" size="1">
+                    <option>Compra</option>
+                    <option>Venda</option>
+                </select>    <br>
+                <input type="submit" name="Enviar" onClick="verifica()"><br>
+            </fieldset>
+
+        </form>
+
+        <section>
+
+            <h2>
+                Parte para retornar o resultado da pesquisa feita pelo cliente no fieldset acima. 
+            </h2>
+            <p id="resul"></p>
+        </section>
+
+        <script>
+            function verifica() {
+                var nome = document.getElementsById("formMercado").elements.namedItem("nome").value;
+                var nome1 = document.getElementById("form1").elements.length;
+
+                document.getElementById("resul").innerHTML = "Found " + nome + nome1 + " elements in the form.";
+
+            }
+            ;
+        </script> 
+        
+    </body>
+
+</html>
